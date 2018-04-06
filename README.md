@@ -15,9 +15,9 @@ I decided to use multi threading to perform read, process and write output logs.
 3. Two IP address are same if they are a perfect match
 
 # Execution
-
+```
 ./run.sh
-
+```
 # Test
 
 I have added following test cases
@@ -27,5 +27,7 @@ I have added following test cases
 4. Log parsing will happen depending on the header content
 
 Command to run test case
+```
 cd insight_testsuite
 ./run_tests.sh
+```
