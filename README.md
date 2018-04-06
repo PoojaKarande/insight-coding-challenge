@@ -7,7 +7,7 @@ The challenge is to build a scalable pipeline to read EDGAR logs and calculate d
 # Description
 The main idea was to use a HashMap to store each active user's IP address and first request timestamp, last request timestamp and number of requests made. To handle session expiry, I maintained a TreeMap of timestamp vs an array of latest IP addresses who made request on that timestamp. This allows quick access to all the IP addresses of expired session.
 
-I decided to use multi threading to perform read, process and write output logs. I also maintained PriorityQueue between each of these threads.
+I decided to use multi threading to perform read, process and write output logs. I also maintained LinkedBlockingQueue between each of these threads.
 
 # Assumptions
 1. Logs will be in chronological order (out of order data will be ignored).
