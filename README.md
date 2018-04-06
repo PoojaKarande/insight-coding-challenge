@@ -11,7 +11,7 @@ I decided to use multi threading to perform read, process and write output logs.
 
 # Assumptions
 1. Logs will be in chronological order (out of order data will be ignored).
-2. All the rows in the log will have same pattern as the header. Any row will less or more values than mentioned in the header will be ignored.
+2. All the rows in the log will have same pattern as the header. Any row with less or more values than mentioned in the header will be ignored.
 3. Two IP address are same if they are a perfect match
 
 # Execution
